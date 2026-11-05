@@ -1,4 +1,4 @@
-# Marvel Character REST API
+]633;E;{   git show HEAD^:README.md &&   printf '\\n\\n' &&   cat README.md\x3b } > README.combined.md && mv -- README.combined.md README.md;71e85760-c562-41a0-8d26-34811066d090]633;C# Marvel Character REST API
 
 ## Project Description
 
@@ -203,3 +203,23 @@ The project uses Git and GitHub for version control, with commits documenting th
 CSC 340 — Software Engineering
 University of North Carolina at Greensboro
 Fall 2026
+
+## Character Gallery Web App
+
+The gallery uses Spring MVC and FreeMarker to display Marvel characters.
+The page controller uses the same service layer as the REST API.
+
+**Live homepage:** [Marvel Character Gallery](https://character-rest-api-z043.onrender.com/)
+
+The free Render service may take about a minute to wake up after inactivity.
+
+| Method | Route | What it does |
+|---|---|---|
+| GET | `/` | Shows the gallery. Accepts optional `name` and `universe` search filters. |
+| GET | `/about` | Explains the gallery and how the app is built. |
+| GET | `/characters/{id}` | Shows a character’s image and details. |
+| GET | `/characters/new` | Opens the add form. |
+| POST | `/characters` | Adds a character and redirects to the gallery. |
+| GET | `/characters/{id}/edit` | Opens the edit form with the character’s current values. |
+| POST | `/characters/{id}` | Saves edits and redirects to the character’s details. |
+| POST | `/characters/{id}/delete` | Deletes the character after confirmation in the browser and redirects to the gallery. |
