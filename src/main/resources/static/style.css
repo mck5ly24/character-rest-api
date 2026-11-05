@@ -126,65 +126,77 @@ main {
 
 /* About page */
 .about-page {
-  max-width: 800px;
-  margin: 30px auto;
-  line-height: 1.6;
+    max-width: 800px;
+    margin: 30px auto;
+    line-height: 1.6;
 }
 
 .about-image {
-  width: 100%;
-  max-width: 450px;
-  height: 300px;
-  object-fit: cover;
-  display: block;
-  margin: 20px auto;
-  border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
 }
 
 
 /* Add Character form */
 .form-page {
-  max-width: 600px;
-  margin: 30px auto;
+    max-width: 600px;
+    margin: 30px auto;
 }
 
 form {
-  background-color: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px #aaa;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #aaa;
 }
 
 form label {
-  display: block;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 form input,
 form textarea {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid #aaa;
-  border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 5px;
 }
 
 form textarea {
-  height: 120px;
+    height: 120px;
 }
 
 form button {
-  margin-top: 20px;
-  padding: 12px 20px;
-  background-color: #222;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 form button:hover {
-  background-color: #555;
+    background-color: #555;
+}
+
+@media (max-width: 800px) {
+    .character-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 540px) {
+    .character-grid {
+        grid-template-columns: 1fr;
+    }
 }
