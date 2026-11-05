@@ -12,7 +12,8 @@
                  alt="${character.name}"
                  width="300">
         <#else>
-            <p class="image-placeholder">No image available</p>
+            <img class="details-image" src="/images/placeholder.svg"
+     alt="No image available" width="300">
         </#if>
 
         <p>

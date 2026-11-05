@@ -21,7 +21,7 @@
                         <#if (character.imageUrl!'')?trim?has_content>
                             <img src="${character.imageUrl}" alt="${character.name}">
                             <#else>
-                                <p class="image-placeholder">No image available</p>
+                                <img src="/images/placeholder.svg" alt="No image available">
                         </#if>
 
                         <h3>${character.name}</h3>
