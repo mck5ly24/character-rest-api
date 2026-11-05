@@ -1,4 +1,4 @@
-]633;E;{   git show HEAD^:README.md &&   printf '\\n\\n' &&   cat README.md\x3b } > README.combined.md && mv -- README.combined.md README.md;71e85760-c562-41a0-8d26-34811066d090]633;C# Marvel Character REST API
+# Marvel Character REST API
 
 ## Project Description
 
