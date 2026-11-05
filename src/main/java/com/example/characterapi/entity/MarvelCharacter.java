@@ -1,4 +1,3 @@
-
 package com.example.characterapi.entity;
 
 import jakarta.persistence.*;
@@ -23,6 +22,9 @@ public class MarvelCharacter {
     private String universe;
 
     private String role;
+
+    @Column(length = 2000)
+    private String imageUrl;
 
     public MarvelCharacter() {
     }
@@ -65,5 +67,13 @@ public class MarvelCharacter {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }

@@ -2,6 +2,7 @@ package com.example.characterapi.repository;
 
 import com.example.characterapi.entity.MarvelCharacter;
 import org.springframework.data.jpa.repository.JpaRepository;
+
 import java.util.List;
 
 public interface MarvelCharacterRepository
@@ -10,4 +11,7 @@ public interface MarvelCharacterRepository
     List<MarvelCharacter> findByUniverseIgnoreCase(String universe);
 
     List<MarvelCharacter> findByNameContainingIgnoreCase(String name);
+
+    List<MarvelCharacter> findByUniverseIgnoreCaseAndNameContainingIgnoreCase(
+            String universe, String name);
 }
